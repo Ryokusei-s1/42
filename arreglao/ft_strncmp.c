@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: albalmen <albalmen@student.42.fr>          +#+  +:+       +#+        */
+/*   By: silvertape <silvertape@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/14 19:42:12 by albalmen          #+#    #+#             */
-/*   Updated: 2025/05/14 19:42:22 by albalmen         ###   ########.fr       */
+/*   Updated: 2025/05/15 03:32:18 by silvertape       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,5 +37,3 @@ int	ft_strncmp(const char *str1, const char *str2, size_t n)
 		return (str1_copy[i] - str2_copy[i]);
 	return (0);
 }
-
-ta mal...creo

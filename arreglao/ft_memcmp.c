@@ -1,26 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: albalmen <albalmen@student.42.fr>          +#+  +:+       +#+        */
+/*   By: silvertape <silvertape@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/05/14 19:38:11 by albalmen          #+#    #+#             */
-/*   Updated: 2025/05/14 19:38:51 by albalmen         ###   ########.fr       */
+/*   Created: 2025/05/14 19:39:08 by albalmen          #+#    #+#             */
+/*   Updated: 2025/05/15 03:30:59 by silvertape       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	*ft_memset(void *ptr, int x, size_t n)
+#include "libft.h"
+
+int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
-	unsigned char	*s;
+	unsigned char	*s1_copy;
+	unsigned char	*s2_copy;
 	size_t			i;
 
+	s1_copy = (unsigned char *)s1;
+	s2_copy = (unsigned char *)s2;
 	i = 0;
-	s = ptr;
 	while (i < n)
 	{
-		s[i] = (unsigned char)x;
+		if (s1_copy[i] != s2_copy[i])
+			return (s1_copy[i] - s2_copy[i]);
 		i++;
 	}
-	return (ptr);
+	return (0);
 }

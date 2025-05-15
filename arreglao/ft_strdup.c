@@ -1,29 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strrchr.c                                       :+:      :+:    :+:   */
+/*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: albalmen <albalmen@student.42.fr>          +#+  +:+       +#+        */
+/*   By: silvertape <silvertape@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/05/14 19:42:36 by albalmen          #+#    #+#             */
-/*   Updated: 2025/05/14 19:42:46 by albalmen         ###   ########.fr       */
+/*   Created: 2025/05/14 19:37:10 by albalmen          #+#    #+#             */
+/*   Updated: 2025/05/15 03:32:03 by silvertape       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strrchr(const char *str, int c)
-{
-	char			*str_copy;
-	int				i;
-	unsigned char	ch;
+#include "libft.h"
 
-	ch = (unsigned char) c;
-	str_copy = (char *)str;
-	i = ft_strlen(str);
-	while (i >= 0)
+char	*ft_strdup(const char *s)
+{
+	char	*ptr;
+	size_t	j;
+
+	ptr = (char *)malloc(sizeof(char) * ft_strlen(s) + 1);
+	if (!ptr)
 	{
-		if (str_copy[i] == ch)
-			return (&str_copy[i]);
-		i--;
+		return (NULL);
 	}
-	return (0);
+	j = 0;
+	while (s[j])
+	{
+		ptr[j] = s[j];
+		j++;
+	}
+	ptr[j] = '\0';
+	return (ptr);
 }
