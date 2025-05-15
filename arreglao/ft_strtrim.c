@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: albalmen <albalmen@student.42.fr>          +#+  +:+       +#+        */
+/*   By: silvertape <silvertape@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/15 12:54:45 by albalmen          #+#    #+#             */
-/*   Updated: 2025/05/15 16:53:16 by albalmen         ###   ########.fr       */
+/*   Updated: 2025/05/15 17:08:26 by silvertape       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,4 +50,3 @@ char	*ft_strtrim(char const *s1, char const *set)
 	new[k] = '\0';
 	return (new);
 }
-

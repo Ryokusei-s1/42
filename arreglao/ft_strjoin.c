@@ -3,33 +3,30 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: albalmen <albalmen@student.42.fr>          +#+  +:+       +#+        */
+/*   By: silvertape <silvertape@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/15 12:54:50 by albalmen          #+#    #+#             */
-/*   Updated: 2025/05/15 16:47:11 by albalmen         ###   ########.fr       */
+/*   Updated: 2025/05/15 17:06:53 by silvertape       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-
 #include "libft.h"
 
-char	*ft_strtrim(char const *s1, char const *set)
+char	*ft_strjoin(char const *s1, char const *s2)
 {
-	size_t	start;
-	size_t	end;
-	char	*result;
+	size_t	len1;
+	size_t	len2;
+	char	*res;
 
-	if (!s1 || !set)
+	if (!s1 || !s2)
 		return (NULL);
-	start = 0;
-	while (s1[start] && ft_strchr(set, s1[start]))
-		start++;
-	end = ft_strlen(s1);
-	while (end > start && ft_strchr(set, s1[end - 1]))
-		end--;
-	result = (char *)malloc(sizeof(char) * (end - start + 1));
-	if (!result)
+	len1 = ft_strlen(s1);
+	len2 = ft_strlen(s2);
+	res = (char *)malloc(sizeof(char) * (len1 + len2 + 1));
+	if (!res)
 		return (NULL);
-	ft_strlcpy(result, &s1[start], end - start + 1);
-	return (result);
+	ft_memcpy(res, s1, len1);
+	ft_memcpy(res + len1, s2, len2);
+	res[len1 + len2] = '\0';
+	return (res);
 }

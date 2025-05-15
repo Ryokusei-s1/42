@@ -1,0 +1,12 @@
+
+--- strchr ---
+
+ft_strchr(NULL, 'A') should have caused a segmentation fault, but didn't
+
+--- strtrim ---
+
+ft_strtrim("HOLA", NULL) caused a segmentation fault
+
+--- strmapi ---
+
+ft_strmapi("HOLA", NULL) caused a segmentation fault
