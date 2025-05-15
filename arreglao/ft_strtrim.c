@@ -1,15 +1,3 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_strtrim.c                                       :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: silvertape <silvertape@student.42.fr>      +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/05/15 12:54:45 by albalmen          #+#    #+#             */
-/*   Updated: 2025/05/15 17:08:26 by silvertape       ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
 #include "libft.h"
 #include <stdlib.h>
 
@@ -33,7 +21,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 
 	i = 0;
 	k = 0;
-	if (!s1)
+	if (!s1 || !set)
 		return (NULL);
 	len = ft_strlen(s1);
 	while (flag_guessing(set, s1[i]) && s1[i])
