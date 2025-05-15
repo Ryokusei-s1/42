@@ -1,26 +1,35 @@
-
 NAME = libft.a
-SOURCES = ft_isdigit.c ft_isalpha.c ft_isascii.c ft_isalnum.c ft_isprint.c ft_strlen.c
+SOURCES = ft_isdigit.c ft_isalpha.c ft_isascii.c ft_isalnum.c ft_isprint.c ft_strlen.c \
+ft_bzero.c ft_atoi ft_itoa ft_calloc.c ft_
+
 
 OBJECTS = $(SOURCES:.c=.o)
+
 
 CC = gcc
 CFLAGS = -Wall -Wextra -Werror
 
+
 all: $(NAME)
 
+
 $(NAME): $(OBJECTS)
-	$(AR) -r $@ $?
+    $(AR) -r $@ $?
+
 
 %.o: %.c
-	$(CC) -c $(CFLAGS) $?
+    $(CC) -c $(CFLAGS) $?
+
 
 clean:
-	rm -f $(OBJECTS)
+    rm -f $(OBJECTS)
+
 
 fclean: clean
-	rm -f $(NAME)
+    rm -f $(NAME)
+
 
 re: fclean all
+
 
 .PHONY: all clean fclean re

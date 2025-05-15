@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isprint.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: silvertape <silvertape@student.42.fr>      +#+  +:+       +#+        */
+/*   By: albalmen <albalmen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/05/12 21:52:37 by silvertape        #+#    #+#             */
-/*   Updated: 2025/05/12 21:57:28 by silvertape       ###   ########.fr       */
+/*   Created: 2025/05/14 18:36:13 by albalmen          #+#    #+#             */
+/*   Updated: 2025/05/14 18:36:27 by albalmen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

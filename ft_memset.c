@@ -1,18 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: albalmen <albalmen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/05/14 18:37:33 by albalmen          #+#    #+#             */
-/*   Updated: 2025/05/14 18:37:55 by albalmen         ###   ########.fr       */
+/*   Created: 2025/05/14 19:38:11 by albalmen          #+#    #+#             */
+/*   Updated: 2025/05/14 19:38:51 by albalmen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isalpha(int c)
+void	*ft_memset(void *ptr, int x, size_t n)
 {
-	if ((c >= 65 && c <= 90) || (c >= 97 && c <= 122))
-		return (1);
-	return (0);
+	unsigned char	*s;
+	size_t			i;
+
+	i = 0;
+	s = ptr;
+	while (i < n)
+	{
+		s[i] = (unsigned char)x;
+		i++;
+	}
+	return (ptr);
 }

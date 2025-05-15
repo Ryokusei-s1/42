@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isalnum.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: silvertape <silvertape@student.42.fr>      +#+  +:+       +#+        */
+/*   By: albalmen <albalmen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/05/12 21:27:07 by silvertape        #+#    #+#             */
-/*   Updated: 2025/05/12 21:42:34 by silvertape       ###   ########.fr       */
+/*   Created: 2025/05/14 18:38:13 by albalmen          #+#    #+#             */
+/*   Updated: 2025/05/14 19:49:01 by albalmen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

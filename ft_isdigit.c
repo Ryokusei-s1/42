@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isdigit.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: silvertape <silvertape@student.42.fr>      +#+  +:+       +#+        */
+/*   By: albalmen <albalmen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/05/12 20:40:57 by silvertape        #+#    #+#             */
-/*   Updated: 2025/05/12 21:28:55 by silvertape       ###   ########.fr       */
+/*   Created: 2025/05/14 18:36:44 by albalmen          #+#    #+#             */
+/*   Updated: 2025/05/14 18:36:55 by albalmen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

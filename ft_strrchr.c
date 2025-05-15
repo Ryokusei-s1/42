@@ -1,18 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: albalmen <albalmen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/05/14 18:37:33 by albalmen          #+#    #+#             */
-/*   Updated: 2025/05/14 18:37:55 by albalmen         ###   ########.fr       */
+/*   Created: 2025/05/14 19:42:36 by albalmen          #+#    #+#             */
+/*   Updated: 2025/05/14 19:42:46 by albalmen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isalpha(int c)
+char	*ft_strrchr(const char *str, int c)
 {
-	if ((c >= 65 && c <= 90) || (c >= 97 && c <= 122))
-		return (1);
+	char			*str_copy;
+	int				i;
+	unsigned char	ch;
+
+	ch = (unsigned char) c;
+	str_copy = (char *)str;
+	i = ft_strlen(str);
+	while (i >= 0)
+	{
+		if (str_copy[i] == ch)
+			return (&str_copy[i]);
+		i--;
+	}
 	return (0);
 }

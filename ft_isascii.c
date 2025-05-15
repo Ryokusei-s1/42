@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isascii.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: silvertape <silvertape@student.42.fr>      +#+  +:+       +#+        */
+/*   By: albalmen <albalmen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/05/12 20:58:25 by silvertape        #+#    #+#             */
-/*   Updated: 2025/05/12 21:24:45 by silvertape       ###   ########.fr       */
+/*   Created: 2025/05/14 18:37:07 by albalmen          #+#    #+#             */
+/*   Updated: 2025/05/14 18:37:19 by albalmen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

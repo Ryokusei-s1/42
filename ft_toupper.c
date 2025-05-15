@@ -3,10 +3,21 @@
 /*                                                        :::      ::::::::   */
 /*   ft_toupper.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: silvertape <silvertape@student.42.fr>      +#+  +:+       +#+        */
+/*   By: albalmen <albalmen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/05/12 22:54:32 by silvertape        #+#    #+#             */
-/*   Updated: 2025/05/12 22:58:19 by silvertape       ###   ########.fr       */
+/*   Created: 2025/05/14 18:32:12 by albalmen          #+#    #+#             */
+/*   Updated: 2025/05/14 19:48:15 by albalmen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+int	ft_toupper(int c)
+{
+	int	diferent;
+
+	diferent = 32;
+	if (c >= 97 && c <= 122)
+	{
+		c = c - diferent;
+	}
+	return (c);
+}

@@ -1,18 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: albalmen <albalmen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/05/14 18:37:33 by albalmen          #+#    #+#             */
-/*   Updated: 2025/05/14 18:37:55 by albalmen         ###   ########.fr       */
+/*   Created: 2025/05/14 19:37:10 by albalmen          #+#    #+#             */
+/*   Updated: 2025/05/14 19:37:57 by albalmen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isalpha(int c)
+char	*ft_strdup(const char *s)
 {
-	if ((c >= 65 && c <= 90) || (c >= 97 && c <= 122))
-		return (1);
-	return (0);
+	char	*ptr;
+	size_t	j;
+
+	ptr = (char *)malloc(sizeof(char) * ft_strlen(s) + 1);
+	if (!ptr)
+	{
+		return (NULL);
+	}
+	j = 0;
+	while (s[j])
+	{
+		ptr[j] = s[j];
+		j++;
+	}
+	ptr[j] = '\0';
+	return (ptr);
 }
+ta mal
